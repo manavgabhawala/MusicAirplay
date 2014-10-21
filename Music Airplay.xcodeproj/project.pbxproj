@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82659B08187B099100F0A0F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82659B07187B099100F0A0F5 /* Foundation.framework */; };
+		82659B0A187B099100F0A0F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82659B09187B099100F0A0F5 /* CoreGraphics.framework */; };
+		82659B0C187B099100F0A0F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82659B0B187B099100F0A0F5 /* UIKit.framework */; };
+		82659B12187B099100F0A0F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82659B10187B099100F0A0F5 /* InfoPlist.strings */; };
+		82659B14187B099100F0A0F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B13187B099100F0A0F5 /* main.m */; };
+		82659B18187B099100F0A0F5 /* mgMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B17187B099100F0A0F5 /* mgMusicAppDelegate.m */; };
+		82659B1B187B099100F0A0F5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82659B19187B099100F0A0F5 /* Main_iPhone.storyboard */; };
+		82659B1E187B099100F0A0F5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82659B1C187B099100F0A0F5 /* Main_iPad.storyboard */; };
+		82659B21187B099100F0A0F5 /* mgMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B20187B099100F0A0F5 /* mgMusicViewController.m */; };
+		82659B23187B099100F0A0F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82659B22187B099100F0A0F5 /* Images.xcassets */; };
+		82659B2A187B099100F0A0F5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82659B29187B099100F0A0F5 /* XCTest.framework */; };
+		82659B2B187B099100F0A0F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82659B07187B099100F0A0F5 /* Foundation.framework */; };
+		82659B2C187B099200F0A0F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82659B0B187B099100F0A0F5 /* UIKit.framework */; };
+		82659B34187B099200F0A0F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82659B32187B099200F0A0F5 /* InfoPlist.strings */; };
+		82659B36187B099200F0A0F5 /* Music_AirplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B35187B099200F0A0F5 /* Music_AirplayTests.m */; };
+		82659B41187B0A7A00F0A0F5 /* NSMutableArray+QueueMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B40187B0A7A00F0A0F5 /* NSMutableArray+QueueMethods.m */; };
+		82659B51187B114600F0A0F5 /* mgMusicAudioFileStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B44187B114600F0A0F5 /* mgMusicAudioFileStream.m */; };
+		82659B52187B114600F0A0F5 /* mgMusicAudioQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B46187B114600F0A0F5 /* mgMusicAudioQueue.m */; };
+		82659B53187B114600F0A0F5 /* mgMusicAudioQueueBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B48187B114600F0A0F5 /* mgMusicAudioQueueBuffer.m */; };
+		82659B54187B114600F0A0F5 /* mgMusicAudioQueueBufferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B4A187B114600F0A0F5 /* mgMusicAudioQueueBufferManager.m */; };
+		82659B55187B114600F0A0F5 /* mgMusicAudioQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B4C187B114600F0A0F5 /* mgMusicAudioQueueController.m */; };
+		82659B56187B114600F0A0F5 /* mgMusicAudioQueueFiller.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B4E187B114600F0A0F5 /* mgMusicAudioQueueFiller.m */; };
+		82659B57187B114600F0A0F5 /* mgMusicAudioStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B50187B114600F0A0F5 /* mgMusicAudioStream.m */; };
+		82659B61187B117600F0A0F5 /* mgMusicAudioInputStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B5A187B117600F0A0F5 /* mgMusicAudioInputStreamer.m */; };
+		82659B62187B117600F0A0F5 /* mgMusicAudioOutputStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B5C187B117600F0A0F5 /* mgMusicAudioOutputStreamer.m */; };
+		82659B63187B117600F0A0F5 /* mgMusicAudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B5E187B117600F0A0F5 /* mgMusicAudioStreamer.m */; };
+		82659B64187B117600F0A0F5 /* mgMusicAudioStreamerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B60187B117600F0A0F5 /* mgMusicAudioStreamerConstants.m */; };
+		82659B68187B119600F0A0F5 /* mgMusicSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B67187B119600F0A0F5 /* mgMusicSession.m */; };
+		82659B6B187B11A800F0A0F5 /* mgMusicGuestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82659B6A187B11A800F0A0F5 /* mgMusicGuestViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82659B2D187B099200F0A0F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82659AFC187B099100F0A0F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82659B03187B099100F0A0F5;
+			remoteInfo = "Music Airplay";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		82659B04187B099100F0A0F5 /* Music Airplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Airplay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82659B07187B099100F0A0F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		82659B09187B099100F0A0F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		82659B0B187B099100F0A0F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		82659B0F187B099100F0A0F5 /* Music Airplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Music Airplay-Info.plist"; sourceTree = "<group>"; };
+		82659B11187B099100F0A0F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82659B13187B099100F0A0F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82659B15187B099100F0A0F5 /* Music Airplay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Music Airplay-Prefix.pch"; sourceTree = "<group>"; };
+		82659B16187B099100F0A0F5 /* mgMusicAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mgMusicAppDelegate.h; sourceTree = "<group>"; };
+		82659B17187B099100F0A0F5 /* mgMusicAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mgMusicAppDelegate.m; sourceTree = "<group>"; };
+		82659B1A187B099100F0A0F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		82659B1D187B099100F0A0F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		82659B1F187B099100F0A0F5 /* mgMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mgMusicViewController.h; sourceTree = "<group>"; };
+		82659B20187B099100F0A0F5 /* mgMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mgMusicViewController.m; sourceTree = "<group>"; };
+		82659B22187B099100F0A0F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82659B28187B099100F0A0F5 /* Music AirplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music AirplayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82659B29187B099100F0A0F5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		82659B31187B099200F0A0F5 /* Music AirplayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Music AirplayTests-Info.plist"; sourceTree = "<group>"; };
+		82659B33187B099200F0A0F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82659B35187B099200F0A0F5 /* Music_AirplayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Music_AirplayTests.m; sourceTree = "<group>"; };
+		82659B3F187B0A7A00F0A0F5 /* NSMutableArray+QueueMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueMethods.h"; sourceTree = "<group>"; };
+		82659B40187B0A7A00F0A0F5 /* NSMutableArray+QueueMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueMethods.m"; sourceTree = "<group>"; };
+		82659B43187B114600F0A0F5 /* mgMusicAudioFileStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioFileStream.h; sourceTree = "<group>"; };
+		82659B44187B114600F0A0F5 /* mgMusicAudioFileStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioFileStream.m; sourceTree = "<group>"; };
+		82659B45187B114600F0A0F5 /* mgMusicAudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioQueue.h; sourceTree = "<group>"; };
+		82659B46187B114600F0A0F5 /* mgMusicAudioQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioQueue.m; sourceTree = "<group>"; };
+		82659B47187B114600F0A0F5 /* mgMusicAudioQueueBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioQueueBuffer.h; sourceTree = "<group>"; };
+		82659B48187B114600F0A0F5 /* mgMusicAudioQueueBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioQueueBuffer.m; sourceTree = "<group>"; };
+		82659B49187B114600F0A0F5 /* mgMusicAudioQueueBufferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioQueueBufferManager.h; sourceTree = "<group>"; };
+		82659B4A187B114600F0A0F5 /* mgMusicAudioQueueBufferManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioQueueBufferManager.m; sourceTree = "<group>"; };
+		82659B4B187B114600F0A0F5 /* mgMusicAudioQueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioQueueController.h; sourceTree = "<group>"; };
+		82659B4C187B114600F0A0F5 /* mgMusicAudioQueueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioQueueController.m; sourceTree = "<group>"; };
+		82659B4D187B114600F0A0F5 /* mgMusicAudioQueueFiller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioQueueFiller.h; sourceTree = "<group>"; };
+		82659B4E187B114600F0A0F5 /* mgMusicAudioQueueFiller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioQueueFiller.m; sourceTree = "<group>"; };
+		82659B4F187B114600F0A0F5 /* mgMusicAudioStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioStream.h; sourceTree = "<group>"; };
+		82659B50187B114600F0A0F5 /* mgMusicAudioStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioStream.m; sourceTree = "<group>"; };
+		82659B59187B117600F0A0F5 /* mgMusicAudioInputStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioInputStreamer.h; sourceTree = "<group>"; };
+		82659B5A187B117600F0A0F5 /* mgMusicAudioInputStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioInputStreamer.m; sourceTree = "<group>"; };
+		82659B5B187B117600F0A0F5 /* mgMusicAudioOutputStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioOutputStreamer.h; sourceTree = "<group>"; };
+		82659B5C187B117600F0A0F5 /* mgMusicAudioOutputStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioOutputStreamer.m; sourceTree = "<group>"; };
+		82659B5D187B117600F0A0F5 /* mgMusicAudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioStreamer.h; sourceTree = "<group>"; };
+		82659B5E187B117600F0A0F5 /* mgMusicAudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioStreamer.m; sourceTree = "<group>"; };
+		82659B5F187B117600F0A0F5 /* mgMusicAudioStreamerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicAudioStreamerConstants.h; sourceTree = "<group>"; };
+		82659B60187B117600F0A0F5 /* mgMusicAudioStreamerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicAudioStreamerConstants.m; sourceTree = "<group>"; };
+		82659B66187B119600F0A0F5 /* mgMusicSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicSession.h; sourceTree = "<group>"; };
+		82659B67187B119600F0A0F5 /* mgMusicSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicSession.m; sourceTree = "<group>"; };
+		82659B69187B11A800F0A0F5 /* mgMusicGuestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgMusicGuestViewController.h; sourceTree = "<group>"; };
+		82659B6A187B11A800F0A0F5 /* mgMusicGuestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mgMusicGuestViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82659B01187B099100F0A0F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82659B0A187B099100F0A0F5 /* CoreGraphics.framework in Frameworks */,
+				82659B0C187B099100F0A0F5 /* UIKit.framework in Frameworks */,
+				82659B08187B099100F0A0F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82659B25187B099100F0A0F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82659B2A187B099100F0A0F5 /* XCTest.framework in Frameworks */,
+				82659B2C187B099200F0A0F5 /* UIKit.framework in Frameworks */,
+				82659B2B187B099100F0A0F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82659AFB187B099100F0A0F5 = {
+			isa = PBXGroup;
+			children = (
+				82659B58187B114F00F0A0F5 /* Streams and Queues */,
+				82659B65187B117B00F0A0F5 /* AudioStreamers */,
+				82659B0D187B099100F0A0F5 /* Music Airplay */,
+				82659B2F187B099200F0A0F5 /* Music AirplayTests */,
+				82659B06187B099100F0A0F5 /* Frameworks */,
+				82659B05187B099100F0A0F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82659B05187B099100F0A0F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82659B04187B099100F0A0F5 /* Music Airplay.app */,
+				82659B28187B099100F0A0F5 /* Music AirplayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82659B06187B099100F0A0F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82659B07187B099100F0A0F5 /* Foundation.framework */,
+				82659B09187B099100F0A0F5 /* CoreGraphics.framework */,
+				82659B0B187B099100F0A0F5 /* UIKit.framework */,
+				82659B29187B099100F0A0F5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82659B0D187B099100F0A0F5 /* Music Airplay */ = {
+			isa = PBXGroup;
+			children = (
+				82659B19187B099100F0A0F5 /* Main_iPhone.storyboard */,
+				82659B1C187B099100F0A0F5 /* Main_iPad.storyboard */,
+				82659B1F187B099100F0A0F5 /* mgMusicViewController.h */,
+				82659B20187B099100F0A0F5 /* mgMusicViewController.m */,
+				82659B66187B119600F0A0F5 /* mgMusicSession.h */,
+				82659B67187B119600F0A0F5 /* mgMusicSession.m */,
+				82659B69187B11A800F0A0F5 /* mgMusicGuestViewController.h */,
+				82659B6A187B11A800F0A0F5 /* mgMusicGuestViewController.m */,
+				82659B22187B099100F0A0F5 /* Images.xcassets */,
+				82659B0E187B099100F0A0F5 /* Supporting Files */,
+				82659B42187B0A7E00F0A0F5 /* Categories */,
+			);
+			path = "Music Airplay";
+			sourceTree = "<group>";
+		};
+		82659B0E187B099100F0A0F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82659B16187B099100F0A0F5 /* mgMusicAppDelegate.h */,
+				82659B17187B099100F0A0F5 /* mgMusicAppDelegate.m */,
+				82659B0F187B099100F0A0F5 /* Music Airplay-Info.plist */,
+				82659B10187B099100F0A0F5 /* InfoPlist.strings */,
+				82659B13187B099100F0A0F5 /* main.m */,
+				82659B15187B099100F0A0F5 /* Music Airplay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82659B2F187B099200F0A0F5 /* Music AirplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				82659B35187B099200F0A0F5 /* Music_AirplayTests.m */,
+				82659B30187B099200F0A0F5 /* Supporting Files */,
+			);
+			path = "Music AirplayTests";
+			sourceTree = "<group>";
+		};
+		82659B30187B099200F0A0F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82659B31187B099200F0A0F5 /* Music AirplayTests-Info.plist */,
+				82659B32187B099200F0A0F5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82659B42187B0A7E00F0A0F5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				82659B3F187B0A7A00F0A0F5 /* NSMutableArray+QueueMethods.h */,
+				82659B40187B0A7A00F0A0F5 /* NSMutableArray+QueueMethods.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		82659B58187B114F00F0A0F5 /* Streams and Queues */ = {
+			isa = PBXGroup;
+			children = (
+				82659B43187B114600F0A0F5 /* mgMusicAudioFileStream.h */,
+				82659B44187B114600F0A0F5 /* mgMusicAudioFileStream.m */,
+				82659B45187B114600F0A0F5 /* mgMusicAudioQueue.h */,
+				82659B46187B114600F0A0F5 /* mgMusicAudioQueue.m */,
+				82659B47187B114600F0A0F5 /* mgMusicAudioQueueBuffer.h */,
+				82659B48187B114600F0A0F5 /* mgMusicAudioQueueBuffer.m */,
+				82659B49187B114600F0A0F5 /* mgMusicAudioQueueBufferManager.h */,
+				82659B4A187B114600F0A0F5 /* mgMusicAudioQueueBufferManager.m */,
+				82659B4B187B114600F0A0F5 /* mgMusicAudioQueueController.h */,
+				82659B4C187B114600F0A0F5 /* mgMusicAudioQueueController.m */,
+				82659B4D187B114600F0A0F5 /* mgMusicAudioQueueFiller.h */,
+				82659B4E187B114600F0A0F5 /* mgMusicAudioQueueFiller.m */,
+				82659B4F187B114600F0A0F5 /* mgMusicAudioStream.h */,
+				82659B50187B114600F0A0F5 /* mgMusicAudioStream.m */,
+			);
+			name = "Streams and Queues";
+			sourceTree = "<group>";
+		};
+		82659B65187B117B00F0A0F5 /* AudioStreamers */ = {
+			isa = PBXGroup;
+			children = (
+				82659B59187B117600F0A0F5 /* mgMusicAudioInputStreamer.h */,
+				82659B5A187B117600F0A0F5 /* mgMusicAudioInputStreamer.m */,
+				82659B5B187B117600F0A0F5 /* mgMusicAudioOutputStreamer.h */,
+				82659B5C187B117600F0A0F5 /* mgMusicAudioOutputStreamer.m */,
+				82659B5D187B117600F0A0F5 /* mgMusicAudioStreamer.h */,
+				82659B5E187B117600F0A0F5 /* mgMusicAudioStreamer.m */,
+				82659B5F187B117600F0A0F5 /* mgMusicAudioStreamerConstants.h */,
+				82659B60187B117600F0A0F5 /* mgMusicAudioStreamerConstants.m */,
+			);
+			name = AudioStreamers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82659B03187B099100F0A0F5 /* Music Airplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82659B39187B099200F0A0F5 /* Build configuration list for PBXNativeTarget "Music Airplay" */;
+			buildPhases = (
+				82659B00187B099100F0A0F5 /* Sources */,
+				82659B01187B099100F0A0F5 /* Frameworks */,
+				82659B02187B099100F0A0F5 /* Resources */,
+				50524F424C454D533F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Music Airplay";
+			productName = "Music Airplay";
+			productReference = 82659B04187B099100F0A0F5 /* Music Airplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82659B27187B099100F0A0F5 /* Music AirplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82659B3C187B099200F0A0F5 /* Build configuration list for PBXNativeTarget "Music AirplayTests" */;
+			buildPhases = (
+				82659B24187B099100F0A0F5 /* Sources */,
+				82659B25187B099100F0A0F5 /* Frameworks */,
+				82659B26187B099100F0A0F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82659B2E187B099200F0A0F5 /* PBXTargetDependency */,
+			);
+			name = "Music AirplayTests";
+			productName = "Music AirplayTests";
+			productReference = 82659B28187B099100F0A0F5 /* Music AirplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82659AFC187B099100F0A0F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = mgMusic;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Manav Gabhawala";
+				TargetAttributes = {
+					82659B27187B099100F0A0F5 = {
+						TestTargetID = 82659B03187B099100F0A0F5;
+					};
+				};
+			};
+			buildConfigurationList = 82659AFF187B099100F0A0F5 /* Build configuration list for PBXProject "Music Airplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82659AFB187B099100F0A0F5;
+			productRefGroup = 82659B05187B099100F0A0F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82659B03187B099100F0A0F5 /* Music Airplay */,
+				82659B27187B099100F0A0F5 /* Music AirplayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82659B02187B099100F0A0F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82659B1E187B099100F0A0F5 /* Main_iPad.storyboard in Resources */,
+				82659B23187B099100F0A0F5 /* Images.xcassets in Resources */,
+				82659B1B187B099100F0A0F5 /* Main_iPhone.storyboard in Resources */,
+				82659B12187B099100F0A0F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82659B26187B099100F0A0F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82659B34187B099200F0A0F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50524F424C454D533F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Library/JailCoder/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Library/JailCoder/Entitlements/Entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82659B00187B099100F0A0F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82659B54187B114600F0A0F5 /* mgMusicAudioQueueBufferManager.m in Sources */,
+				82659B21187B099100F0A0F5 /* mgMusicViewController.m in Sources */,
+				82659B18187B099100F0A0F5 /* mgMusicAppDelegate.m in Sources */,
+				82659B62187B117600F0A0F5 /* mgMusicAudioOutputStreamer.m in Sources */,
+				82659B6B187B11A800F0A0F5 /* mgMusicGuestViewController.m in Sources */,
+				82659B68187B119600F0A0F5 /* mgMusicSession.m in Sources */,
+				82659B52187B114600F0A0F5 /* mgMusicAudioQueue.m in Sources */,
+				82659B61187B117600F0A0F5 /* mgMusicAudioInputStreamer.m in Sources */,
+				82659B56187B114600F0A0F5 /* mgMusicAudioQueueFiller.m in Sources */,
+				82659B41187B0A7A00F0A0F5 /* NSMutableArray+QueueMethods.m in Sources */,
+				82659B57187B114600F0A0F5 /* mgMusicAudioStream.m in Sources */,
+				82659B14187B099100F0A0F5 /* main.m in Sources */,
+				82659B51187B114600F0A0F5 /* mgMusicAudioFileStream.m in Sources */,
+				82659B53187B114600F0A0F5 /* mgMusicAudioQueueBuffer.m in Sources */,
+				82659B55187B114600F0A0F5 /* mgMusicAudioQueueController.m in Sources */,
+				82659B63187B117600F0A0F5 /* mgMusicAudioStreamer.m in Sources */,
+				82659B64187B117600F0A0F5 /* mgMusicAudioStreamerConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82659B24187B099100F0A0F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82659B36187B099200F0A0F5 /* Music_AirplayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82659B2E187B099200F0A0F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82659B03187B099100F0A0F5 /* Music Airplay */;
+			targetProxy = 82659B2D187B099200F0A0F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82659B10187B099100F0A0F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82659B11187B099100F0A0F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		82659B19187B099100F0A0F5 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82659B1A187B099100F0A0F5 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		82659B1C187B099100F0A0F5 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82659B1D187B099100F0A0F5 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		82659B32187B099200F0A0F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82659B33187B099200F0A0F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82659B37187B099200F0A0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82659B38187B099200F0A0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82659B3A187B099200F0A0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music Airplay/Music Airplay-Prefix.pch";
+				INFOPLIST_FILE = "Music Airplay/Music Airplay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82659B3B187B099200F0A0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music Airplay/Music Airplay-Prefix.pch";
+				INFOPLIST_FILE = "Music Airplay/Music Airplay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		82659B3D187B099200F0A0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Music Airplay.app/Music Airplay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music Airplay/Music Airplay-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Music AirplayTests/Music AirplayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		82659B3E187B099200F0A0F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Music Airplay.app/Music Airplay";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Music Airplay/Music Airplay-Prefix.pch";
+				INFOPLIST_FILE = "Music AirplayTests/Music AirplayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82659AFF187B099100F0A0F5 /* Build configuration list for PBXProject "Music Airplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82659B37187B099200F0A0F5 /* Debug */,
+				82659B38187B099200F0A0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82659B39187B099200F0A0F5 /* Build configuration list for PBXNativeTarget "Music Airplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82659B3A187B099200F0A0F5 /* Debug */,
+				82659B3B187B099200F0A0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82659B3C187B099200F0A0F5 /* Build configuration list for PBXNativeTarget "Music AirplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82659B3D187B099200F0A0F5 /* Debug */,
+				82659B3E187B099200F0A0F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82659AFC187B099100F0A0F5 /* Project object */;
+}
