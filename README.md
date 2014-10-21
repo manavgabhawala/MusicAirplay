@@ -12,4 +12,4 @@ Works only for one song at a time.
 Need to fix synchronising of songs over more than 3 devices.
 
 
-Credit for Music Manipulation Tricks: http://robots.thoughtbot.com/streaming-audio-to-multiple-listeners-via-ios-multipeer-connectivity
+Credit for Music Manipulation Tricks: http://goo.gl/FmbWHQ
